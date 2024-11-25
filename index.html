@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata for the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portfolio</title>
+    <!-- Link to external stylesheet for styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li> <!-- Link to About Me section -->
+            <li><a href="#portfolio">Portfolio</a></li> <!-- Link to Portfolio section -->
+            <li><a href="#projects">Projects</a></li> <!-- Link to Projects section -->
+            <li><a href="#contact">Contact</a></li> <!-- Link to Contact section -->
+        </ul>
+    </nav>
+
+    <!-- Header Section with Profile Picture and Introduction -->
+    <header>
+        <div class="profile-pic">
+            <img src="moses_photo.jpg" alt="moses Photo"> <!-- Profile picture of the user -->
+        </div>
+        <h1>Moses Mwangi</h1> <!-- Your Name displayed here -->
+        <p>Web Developer | Visionary Leader | Innovator</p> <!-- Short introduction or tagline -->
+    </header>
+
+    <!-- About Me Section (Education, Hobbies, Vision, Achievements) -->
+    <section id="about" class="portfolio">
+        <div class="card">
+            <h2>Education</h2> <!-- Education header -->
+            <p>Kyu na kathalika</p> <!-- Degree -->
+            <p>blabla blabla</p> <!-- Institution name -->
+        </div>
+        <div class="card">
+            <h2>Hobbies</h2> <!-- Hobbies header -->
+            <p>Designing, Reading, Gaming</p> <!-- List of hobbies -->
+        </div>
+        <div class="card">
+            <h2>Vision</h2> <!-- Vision header -->
+            <p>To inspire through technology and create seamless digital solutions.</p> <!-- Vision statement -->
+        </div>
+        <div class="card">
+            <h2>Achievements</h2> <!-- Achievements header -->
+            <p>Developed 4+ projects with international recognition.</p> <!-- Achievements list -->
+        </div>
+    </section>
+
+    <!-- Projects Section (Displaying the Projects) -->
+    <section id="projects">
+        <h2>My Projects</h2> <!-- Heading for the projects section -->
+
+        <!-- Project 1 -->
+        <div class="project">
+            <img src="project1-cover.jpg" alt="Project 1 Cover" class="project-cover"> <!-- Image for Project 1 -->
+            <h3>Virus Detection System</h3> <!-- Project name -->
+            <p>Status: <span class="status active">Active</span></p> <!-- Project status -->
+            <p>Description: Tool for detecting Viruses systems.</p> <!-- Short description of the project -->
+            <a href="https://github.com/SoftwareFixingSoftware/SoftwareFixingSoftware1.0-setUp-file-Windows" target="_blank">GitHub Link</a> <!-- GitHub link for project 1 -->
+            <div class="rating">
+                <label for="project1-rating">Rate Me:</label> <!-- Label for rating dropdown -->
+                <select id="project1-rating">
+                    <!-- Dropdown to select rating for the project -->
+                    <option value="5">5 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="2">2 Stars</option>
+                    <option value="1">1 Star</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project">
+            <img src="project2-cover.jpg" alt="Project 2 Cover" class="project-cover"> <!-- Image for Project 2 -->
+            <h3>Portfolio Website</h3> <!-- Project name -->
+            <p>Status: <span class="status closed">Closed</span></p> <!-- Project status -->
+            <p>Description: Hii utaweka url ya hii web after usha host ama adi your git hub readme,....make sure umechange url</p> <!-- Short description -->
+            <a href="https://github.com/yourusername/project2" target="_blank">GitHub Link</a> <!-- GitHub link for project 2 -->
+            <div class="rating">
+                <label for="project2-rating">Rate Me:</label> <!-- Label for rating dropdown -->
+                <select id="project2-rating">
+                    <!-- Dropdown to select rating for project 2 -->
+                    <option value="5">5 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="2">2 Stars</option>
+                    <option value="1">1 Star</option>
+                </select>
+            </div>
+        </div>
+    </section>
+   <div>
+    <hr>
+   </div>
+    <!-- Social Media Section -->
+    <section id="social-media">
+        <h2>Connect with Me...hii uta weka links za social media na pia images zake udownload uzisave, then uchange jina za images url</h2> <!-- Heading for social media links -->
+        <div class="social-icons">
+            <!-- Social media icons with links -->
+            <a href="https://twitter.com/yourusername" target="_blank">
+                <img src="twitter-icon.png" alt="Twitter"> <!-- Twitter icon -->
+            </a>
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank">
+                <img src="linkedin-icon.png" alt="LinkedIn"> <!-- LinkedIn icon -->
+            </a>
+            <a href="https://github.com/yourusername" target="_blank">
+                <img src="github-icon.png" alt="GitHub"> <!-- GitHub icon -->
+            </a>
+            <a href="https://www.instagram.com/yourusername" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram"> <!-- Instagram icon -->
+            </a>
+        </div>
+    </section>
+
+    <!-- Buy Me a Coffee Section -->
+    <section id="buy-coffee">
+        <h2>Buy Me a Coffee</h2> <!-- Heading for the Buy Me a Coffee section -->
+        <p>If you enjoy my work, you can support me by buying me a coffee!......uta create account kwa buy me coffee if you want plus its icon</p> <!-- Short message -->
+        <a href="https://www.buymeacoffee.com/yourusername" target="_blank">
+            <img src="buymeacoffee-logo.png" alt="Buy Me a Coffee"> <!-- Buy Me a Coffee button/logo -->
+        </a>
+    </section>
+
+    <!-- Background Animation Canvas -->
+    <canvas id="animationCanvas"></canvas> <!-- A canvas element for background animations -->
+
+    <!-- External JavaScript files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script> <!-- Three.js for 3D animations -->
+    <script src="script.js"></script> <!-- Custom script file -->
+</body>
+
+</html>
