@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6e45e2, #88d3ce);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card, .project {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card:hover, .project:hover {
+    transform: scale(1.05);
+}
+
+.project-cover {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.status {
+    font-weight: bold;
+}
+
+.status.active {
+    color: #28a745;
+}
+
+.status.closed {
+    color: #dc3545;
+}
+
+/* Projects section */
+#projects {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+    gap: 20px;
+}
+
+.project {
+    flex: 0 1 calc(50% - 20px); /* Adjusts the width of each project */
+    margin: 10px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+/* Animation Canvas */
+#animationCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Responsive Design: Stacks projects on smaller screens */
+@media (max-width: 768px) {
+    .project {
+        flex: 0 1 100%; /* Stack the projects vertically */
+    }
+}
